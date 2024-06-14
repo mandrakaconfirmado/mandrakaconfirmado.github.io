@@ -1,0 +1,23 @@
+body{
+    background: rgb(239, 130, 184);
+}
+ #placeholder{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    transform: scale(0.5);
+    height: 100vh;
+
+ }
+
+ img{
+    align-self: center;
+    border: 10px solid rgb(207, 24, 116);
+    border-radius: 30px;
+    margin: 30px;
+    box-shadow: 0 20px 20px rgb(239, 3, 149);
+    transition: 0.5s all ease-in-out;
+ }
+  img:hover{
+    transform: scale(2);
+  }

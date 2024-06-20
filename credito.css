@@ -98,7 +98,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid #ffb0f8;
+    border-bottom: 2px solid #ffb0f8;
 }
 .credito{
     width: 225px;

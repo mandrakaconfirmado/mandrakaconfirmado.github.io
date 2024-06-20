@@ -89,7 +89,7 @@ body{
     height: 195px;
     display: flex;
     flex-direction: column;
-    border: 2px solid black
+    border: 3px solid #ffb0f8;
 }
 .titulo{
     width: 225px;
@@ -98,7 +98,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 2px solid black;
+    border: 3px solid #ffb0f8;
 }
 .credito{
     width: 225px;

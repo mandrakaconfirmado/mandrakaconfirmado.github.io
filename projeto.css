@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nanum Myeongjo", serif;
+    color: rgb(255, 255, 255);
+
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(201, 3, 99);
+    border-bottom: 2px rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+}
+.cabecalho{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 3px solid rgb(255 255 255);
+}
+.bolinha{
+    background-color: rgb(255, 160, 184);
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.nome{
+    height: 70px;
+    width: 224px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opcoes{
+    height: 70px;
+    width: 410px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.traco{
+    margin-right: 12px;
+    font-size: 35px;
+}
+.geral2{
+    height: 100%;
+    background-color: rgb(201, 3, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.parte1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 370px;
+    height: 550px;
+    margin-top: 10px;
+}
+.parte2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 370px;
+    height: 550px;
+    margin-top: 10px;
+}
+.parte3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 370px;
+    height: 550px;
+    margin-top: 10px;
+}
+.projeto{
+    width: 230px;
+    height: 255px;
+    background-color: white;
+    border: 2px solid black;
+}
+.projetoMeio{
+    width: 200px;
+    height: 225px;
+    background-color: white;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+.foto{
+    background-color: red;
+    width: 230px;
+    height: 130px;
+}
+.img{
+    width: 230px;
+    height: 130px;
+}
+.img2{
+    width: 230px;
+    height: 130px;
+}
+.img3{
+    width: 200px;
+    height: 110px;
+}
+.img5{
+    width: 230px;
+    height: 130px;
+}
+.titulo{
+    width: 230px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+.texto{
+ background-color: rgb(139, 0, 109);
+    width: 230px;
+    height: 125px;
+}
+.texto2{
+ background-color: rgb(139, 0, 109);
+    width: 230px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fotoMeio{
+    background-color: red;
+    width: 200px;
+    height: 110px;
+}
+.textoMeio{
+    background-color: rgb(139, 0, 109);
+    width: 200px;
+    height: 115px;
+    text-align: center;
+}
+.tituloMeio{
+   background-color: rgb(139, 0, 109);
+    width: 200px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}

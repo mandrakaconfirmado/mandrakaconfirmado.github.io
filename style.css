@@ -11,7 +11,7 @@ a{
 body{
     display: flex;
     flex-direction: column;
-    background-color: rgba(156, 7, 116, 1);
+    background-color: rgb(201, 3, 99);
     width: 100vw;
     height: 100vh;
 }

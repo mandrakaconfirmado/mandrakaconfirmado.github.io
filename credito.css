@@ -90,6 +90,7 @@ body{
     display: flex;
     flex-direction: column;
     border: 3px solid #ffb0f8;
+    box-shadow: 17px 8px 20px 3px #3f1e34;
 }
 .titulo{
     width: 225px;

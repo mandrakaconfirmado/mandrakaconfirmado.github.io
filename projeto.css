@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Nanum Myeongjo", serif;
+    font-family: "Playwrite NG Modern", cursive;
     color: rgb(255, 255, 255);
 
 }
@@ -91,16 +91,16 @@ body{
     width: 230px;
     height: 255px;
     background-color: white;
-    border: 2px solid black;
-    box-shadow: 17px 8px 20px 3px #3f1e34;
+   border: 2px solid rgb(255 160 184);
+   box-shadow: 17px 8px 20px 3px #3f1e34;
 }
 .projetoMeio{
-    width: 230px;
-    height: 255px;
+    width: 200px;
+    height: 225px;
     background-color: white;
     margin-top: 20px;
-    border: 2px solid black;
-    box-shadow: 17px 8px 20px 3px #3f1e34;
+   border: 2px solid rgb(255 160 184);
+   box-shadow: 17px 8px 20px 3px #3f1e34;
 }
 .foto{
     background-color: red;

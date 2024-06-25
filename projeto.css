@@ -39,7 +39,7 @@ body{
     height: fit-content;
     display: flex;
     justify-content: space-between;
-    margin-top: -80px;
+    margin-top: -28px;
     border-bottom: 3px solid rgb(255 255 255);
 }
 .bolinha{

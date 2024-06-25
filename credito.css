@@ -87,6 +87,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 200px;
 }
 .parte2{
     width: 270px;

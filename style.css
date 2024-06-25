@@ -89,7 +89,8 @@ body{
     flex-direction: column;
     border: 5px solid #ffb9ef;
     border-radius: 34px 34px 34px 34px;
-    box-shadow: 15px 20px 20px 0px #ffdce9;
+    box-shadow: 14px 20px 20px 20px #ff88b4;
+
 }
 .parte1{
     width: 450px;

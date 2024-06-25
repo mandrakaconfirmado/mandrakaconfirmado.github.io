@@ -3,26 +3,43 @@
     padding: 0;
     font-family: "Playwrite NG Modern", cursive;
     color: rgb(255, 255, 255);
-
+}
+.separado{
+    display: none;
 }
 a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: black;
 }
 body{
+    background: linear-gradient(to right, rgb(201, 3, 99), white);
     display: flex;
-    flex-direction: column;
-    background-color: rgb(201, 3, 99);
-    border-bottom: 2px rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
+    flex-direction: column;
+    animation: fundo 2s linear;
+    filter: blur(0px);
+}
+@keyframes fundo {
+    0% 
+    {
+        filter: blur(5px);
+
+    }
+    100%
+    {
+        filter: blur(0px);
+
+    }
 }
 .cabecalho{
     width: 100vw;
-    height: 70px;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: -80px;
     border-bottom: 3px solid rgb(255 255 255);
 }
 .bolinha{
@@ -55,55 +72,58 @@ body{
 }
 .geral2{
     height: 100%;
-    background-color: rgb(201, 3, 99);
     display: flex;
     justify-content: center;
     align-items: center
 }
+.sticky{
+    background-color: rgb(255 88 130);
+    position: sticky;
+    top: 6px;
+    text-align: center;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    width: 200px;
+    border-radius: 10px;
+    border: 5px solid #542745;
+    font-size: 15px;
+    z-index: 1;
+}
 .parte1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 370px;
-    height: 550px;
+    width: 70vw;
+    height: fit-content;
     margin-top: 10px;
-}
-.parte2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 370px;
-    height: 550px;
-    margin-top: 10px;
-}
-.parte3{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 370px;
-    height: 550px;
-    margin-top: 10px;
+    flex-wrap: wrap
 }
 .projeto{
     width: 230px;
     height: 255px;
     background-color: white;
-   border: 2px solid rgb(255 160 184);
-   box-shadow: 17px 8px 20px 3px #3f1e34;
+    border: 2px solid black;
+    margin: 10px;
+    box-shadow: 14px 11px 20px rgb(139 0 109);
+    animation: anima 2s linear;
+    position: relative;
+    left: 0px;
+    transform: rotate(0deg);
 }
-.projetoMeio{
-    width: 200px;
-    height: 225px;
-    background-color: white;
-    margin-top: 20px;
-   border: 2px solid rgb(255 160 184);
-   box-shadow: 17px 8px 20px 3px #3f1e34;
+@keyframes anima {
+    0% 
+    {
+        left: -100vw;
+        transform: rotate(720deg);
+    }
+    100%
+    {
+       left: 0px;
+       transform: rotate(0deg);
+    }
 }
 .foto{
-    background-color: red;
     width: 230px;
     height: 130px;
 }
@@ -129,16 +149,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid rgb(255 160 184);
-    border-top: 2px solid rgb(255 160 184);
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
 }
 .texto{
- background-color: rgb(139, 0, 109);
+    background-color: rgb(201, 3, 99);
     width: 230px;
     height: 125px;
 }
 .texto2{
- background-color: rgb(139, 0, 109);
+    flex-direction: column;
+    background-color: rgb(139, 0, 109);
     width: 230px;
     height: 61px;
     display: flex;
@@ -146,24 +167,139 @@ body{
     justify-content: center;
     text-align: center;
 }
-.fotoMeio{
-    background-color: red;
-    width: 200px;
-    height: 110px;
+.link{
+    color: blue;
 }
-.textoMeio{
-    background-color: rgb(139, 0, 109);
-    width: 200px;
-    height: 115px;
-    text-align: center;
+.link:hover{
+    color: green;
 }
-.tituloMeio{
-   background-color: rgb(139, 0, 109);
-    width: 200px;
-    height: 55px;
+@media screen and (width < 415px) {
+    body{
+        align-items: flex-start;
+    }
+    .cabecalho{
+        display: none;
+    }
+    .botao{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+        width: 150px;
+        font-size: 15px;
+        background-color: rgb(139 0 109);
+        font-weight: bold;
+    }
+    .separado{
+        width: 50vw;
+        display: block;
+    }
+    .titulos{
+        margin-top: 70px;
+    margin-bottom: 30px;
+    background-color: rgb(201 3 99);
+    width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid rgb(255 160 184);
-    border-top: 2px solid rgb(255 160 184);
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    height: fit-content;
+    }
+    .links{
+        text-decoration: none;
+        background: white;
+        margin-bottom: 22px;
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;    
+    }
+    .aberto{
+        display: none;
+        flex-direction: column;
+        height: 80vw;
+        width: 100vw;
+        align-items: center;
+    }
+    aside{
+        display: flex;
+        transition: 0.5s ease-in-out;
+        background: rgb(139 0 109);
+        position: absolute;
+        width: 0vw;
+        height: 100vh;
+        z-index: 1;
+        border-right: 5px solid rgb(201 3 99);
+        border-bottom: 5px solid black
+    }
+    .sticky{
+        display: none;
+    }
+    .geral2{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: -webkit-fill-available;
+        overflow: auto;
+    }
+    .parte1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        width: -webkit-fill-available;
+        margin-top: 170px;
+    }
+    .projeto{
+        width: 270px;
+        height: 330px;
+        background-color: white;
+        border: 2px solid black;
+        margin: 20px;
+        box-shadow: 5px 8px 0px rgb(0 0 0);
+        animation: anima 2s linear;
+        position: relative;
+        left: -0px;
+        transform: rotate(0deg);
+    }
+    .foto{
+        width: 100%;
+        height: 140px;
+    }
+    .img{
+        width: 100%;
+        height: 140px;
+    }
+    .texto{
+        width: 100%;
+        height: 190px;
+        font-size: 19px;
+    }
+    .titulo{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: orange;
+        width: -webkit-fill-available;
+        display: flex;
+        justify-content: center;
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;
+        height: fit-content;
+        height: 70px;
+    }
+    .texto2{
+        flex-direction: column;
+        width: -webkit-fill-available;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }

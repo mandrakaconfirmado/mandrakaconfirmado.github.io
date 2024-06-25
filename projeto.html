@@ -8,8 +8,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+SK:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Projeto</title>
+    <script defer>
+        function teste(){
+           const aside = document.querySelectorAll(".aside")[0]
+           const aberto = document.querySelectorAll(".aberto")[0]
+           const geral2 = document.querySelectorAll(".geral2")[0]
+
+            if(aside.style.width == "0vw"){
+                aside.style.width = "100vw";
+                geral2.style.overflow = "hidden";
+                setTimeout(function() {
+                    aberto.style.display = "flex";
+                }, 450); 
+                
+            }else{
+                aside.style.width = "0vw";
+                aberto.style.display = "none";
+            }
+       }
+   </script>
 </head>
 <body>
+    <div class="separado">
+        <button class="botao" onclick="teste()">Clique aqui para navegar</button>
+        <aside class="aside">
+            <div class="aberto">
+                <h1 class="titulos">Acessar projetos:</h1>
+                <a class="links" href="index.html">Página pessoal</a>
+                <a class="links" href="projeto.html">Página de projeto</a>
+                <a class="links" href="credito.html">Página de licença e créditos</a>
+            </div>
+        </aside>
+    </div>
+    <div class="sticky">
+        <p>Veja meus projetos clicando no aperte aqui</p>
+    </div>
     <div class="cabecalho">
         <div class="nome">
             <div class="bolinha"></div>
@@ -34,7 +67,7 @@
                         <p>Animação com keyframes</p>
                     </div>
                     <div class="texto2">
-                        <a href=""></a><p>Acesse aqui para ver o projeto</p>
+                        <a class="link" href="./projetos/Animação com keyframes/mar (2).html"><p>Aperte aqui </p></a><p>para ver o projeto</p>
                     </div>
                 </div>
             </div>
@@ -47,40 +80,36 @@
                         <p>Calculadora</p>
                     </div>
                     <div class="texto2">
-                        <p>Acesse aqui para ver o projeto</p>
+                        <a class="link" href="./projetos/Calculadora/index.html"><p>Aperte aqui</p></a><p>para ver o projeto</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="parte2">
-            <div class="projetoMeio">
-                <div class="fotoMeio">
-                    <img src="img/localhost.PNG" alt="" class="img3">
+            <div class="projeto">
+                <div class="foto">
+                    <img src="img/localhost.PNG" alt="" class="img">
                 </div>
-                <div class="textoMeio">
-                    <div class="tituloMeio">
+                <div class="texto">
+                    <div class="titulo">
                         <p>Exemplo Localhost</p>
                     </div>
-                    <div class="texto2Meio">
-                        <p>Acesse aqui para ver o projeto</p>
+                    <div class="texto2">
+                        <a class="link" href="./projetos/Exemplo LocalStorage/index.html"><p>Aperte aqui</p></a><p>para ver o projeto</p>
                     </div>
                 </div>
             </div>
-            <div class="projetoMeio">
-                <div class="fotoMeio">
-                    <img src="img/maribela.PNG" alt="" class="img3">
+            <div class="projeto">
+                <div class="foto">
+                    <img src="img/maribela.PNG" alt="" class="img">
                 </div>
-                <div class="textoMeio">
-                    <div class="tituloMeio">
+                <div class="texto">
+                    <div class="titulo">
                         <p>Formulario</p>
                     </div>
-                    <div class="texto2Meio">
-                        <p>Acesse aqui para ver o projeto</p>
+                    <div class="texto2">
+                        <a class="link" href="./projetos/Formulario/Maribela.html"><p>Aperte aqui</p></a><p>para ver o projeto</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="parte3">
+            </div>   
             <div class="projeto">
                 <div class="foto">
                     <img src="img/mqtt.PNG" alt="" class="img">
@@ -90,7 +119,7 @@
                         <p>MQTT</p>
                     </div>
                     <div class="texto2">
-                        <p>Acesse aqui para ver o projeto</p>
+                        <a class="link" href="./projetos/MQTT/indexcerto.html"><p>Aperte aqui</p></a><p>para ver o projeto</p></a>
                     </div>
                 </div>
             </div>
@@ -103,7 +132,7 @@
                         <p>Pega teclas</p>
                     </div>
                     <div class="texto2">
-                        <p>Acesse aqui para ver o projeto</p>
+                        <a class="link" href="./projetos/Pega teclas/teclas2.html"><p>Aperte aqui</p></a><p>para ver o projeto</p></a>
                     </div>
                 </div>
             </div>

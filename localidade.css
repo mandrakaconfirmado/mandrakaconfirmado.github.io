@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Playwrite NG Modern", cursive;
+    color: rgb(255, 255, 255);
 }
 html{
     overflow-x: hidden;
@@ -14,7 +15,7 @@ a{
     color: black;
 }
 body{
-    background-color: rgba(230, 230, 230, 1);
+    background: linear-gradient(to right, rgb(201, 3, 99), white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,11 +32,12 @@ body{
     border-bottom: 3px solid rgb(255 255 255);
 }
 .bolinha{
-    background-color: yellow;
+    background-color: rgb(255, 160, 184);
     width: 35px;
     height: 35px;
     border-radius: 100%;
     margin-right: 10px;
+    box-shadow: 1px 2px 20px 3px #ffc0d7;
 }
 .nome{
     height: 70px;
@@ -75,9 +77,10 @@ body{
     flex-direction: column;
     margin-top: 50px;
     width: 500px;
-    height: 360px;
-    border: 5px solid black;
+    height: 415px;
+    border: 5px solid #8d0474;
     border-radius: 10px;
+    box-shadow: 19px 20px 20px 0px #83006b;
 }
 .sep{
     width: 100%;
@@ -87,11 +90,14 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid #8d0474;
     padding-bottom: 12px;
 }
+#btncep{
+    color: black;
+}
 #btncep:hover{
-    background-color: lime;
+    background-color: rgb(255, 133, 208);
     color: black;
     font-weight: bold;
 }
@@ -111,7 +117,7 @@ body{
         align-items: center;
         border-bottom: 4px solid black;
         padding-bottom: 12px;
-        background-color: rgba(230, 230, 230, 1);
+        background-color: #8d0474;
     }
     .cabecalho{
         display: none;
@@ -123,7 +129,7 @@ body{
         z-index: 2;
         width: 150px;
         font-size: 15px;
-        background-color: #47ff50;
+        background-color: rgb(139 0 109);
         font-weight: bold;
     }
     .separado{
@@ -134,7 +140,7 @@ body{
     .titulos{
         margin-top: 70px;
         margin-bottom: 30px;
-        background-color: wheat;
+        background-color: rgb(201 3 99);
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -163,13 +169,13 @@ body{
     aside{
         display: flex;
         transition: 0.5s ease-in-out;
-        background: rgb(226 96 96);
+        background: rgb(139 0 109);
         position: absolute;
         width: 0vw;
-        height: 108vh;
+        height: 100vh;
         z-index: 1;
-        border-right: 5px solid black;
-        border-bottom: 5px solid black;
+        border-right: 5px solid rgb(201 3 99);
+        border-bottom: 5px solid black
     }
     .formulario{
         display: flex;
@@ -181,3 +187,4 @@ body{
         border-radius: 10px;
     }
 }
+

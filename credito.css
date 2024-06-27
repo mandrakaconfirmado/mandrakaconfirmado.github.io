@@ -69,6 +69,7 @@ body{
     border: 5px solid #542745;
     font-size: 15px;
     margin-top: 20px;
+    box-shadow: 15px 20px 20px 0px #542745
 }
 .geral{
     display: flex;

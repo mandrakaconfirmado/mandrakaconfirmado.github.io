@@ -88,6 +88,7 @@ body{
     border: 5px solid #542745;
     font-size: 15px;
     z-index: 1;
+    box-shadow: 15px 20px 20px 0px #542745
 }
 .parte1{
     display: flex;

@@ -101,7 +101,7 @@ body{
     color: black;
     font-weight: bold;
 }
-#cep{
+.leitinha{
     color: black;
 }
 @media screen and (width < 415px) {
